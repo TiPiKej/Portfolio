@@ -22,6 +22,11 @@
 		}
 	},
 	"Frameworki":{
+		"react":{
+			"active": true,
+			"name": "react",
+			"description": "<a href=\"https://pl.wikipedia.org/wiki/React.js\">React JS</a> - biblioteka języka programowania JavaScript, która wykorzystywana jest do tworzenia interfejsów graficznych aplikacji internetowych. Została stworzona przez Jordana Walke, programistę Facebooka, a zainspirowana przez rozszerzenie języka PHP - XHP. "
+		},
 		"jquery": {
 			"active": true,
 			"name": "jquery",
@@ -43,6 +48,16 @@
 			"active": true,
 			"name": "stylus",
 			"description": "<a href=\"https://en.wikipedia.org/wiki/Stylus_(stylesheet_language)\">Stylus</a> is a dynamic stylesheet preprocessor language that is compiled into Cascading Style Sheets. Its design is influenced by Sass and LESS. It's regarded as the fourth most used CSS preprocessor syntax. It was created by TJ Holowaychuk, a former programmer for Node.js and the creator of the Luna language. It is written in JADE and Node.js."
+		}
+	},
+	"Architektury":{
+		"flux":{
+			"active": true,
+			"name": "flux",
+			"description": "<a href=\"https://facebook.github.io/flux/docs/in-depth-overview.html\">Flux</a> - architektura aplikacji, którą Facebook używa do budowania aplikacji od strony klienta. Uzupełnia Reactowy widok budowania komponentów poprzez wykorzystanie jednokierunkowego przepływu danych.",
+			"source": [
+				"https://facebook.github.io/flux/docs/in-depth-overview.html"
+			]
 		}
 	}
 }

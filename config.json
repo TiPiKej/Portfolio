@@ -41,6 +41,18 @@
       "css": "cursor_p",
       "code": 62042,
       "src": "fontawesome"
+    },
+    {
+      "uid": "0f6a2573a7b6df911ed199bb63717e27",
+      "css": "github-circled",
+      "code": 61595,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "c3e5dafba1739ef33cc574c7484febf7",
+      "css": "quote",
+      "code": 59392,
+      "src": "entypo"
     }
   ]
 }

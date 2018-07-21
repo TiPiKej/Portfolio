@@ -272,6 +272,19 @@ let dom = {
 
 												dane = dane.replace('<a', `<a target="${target}" title="${title}"`);
 
+												// adding quotation marks
+
+												if(resp[name][lang]['source'] !== undefined) {
+													const sources = resp[name][lang]['source'];
+
+													dane += `<br><br><hr><p style="margin-top: 10px; font-size: 20px;">From:</p>`;
+													dane += "<ul>";
+													Array.from(sources).forEach(el => {
+														dane += `<li><a style="font-size: .6em;" href="${el}">${el}</a></li>`;
+													})
+													dane += "</ul>";
+												}
+
 												if((window.top.innerWidth - event.clientX) < window.top.innerWidth * .3) right = `${window.top.innerWidth - event.clientX - 15}px`;
 												else left = `${event.clientX}px`;
 

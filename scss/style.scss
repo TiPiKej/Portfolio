@@ -277,6 +277,7 @@ main{
 		}
 
 		.jezyk_info{
+			z-index: 999;
 			background: $primary;
 			color: $font-color;
 			max-width: 30vw;
@@ -515,6 +516,15 @@ main{
 					&:hover{
 						color: $font-color;
 						background: #1da1f2;
+					}
+				}
+
+				&.icon-github-circled{
+					color: #323131;
+
+					&:hover{
+						color: $font-color;
+						background: #323131;
 					}
 				}
 			}
