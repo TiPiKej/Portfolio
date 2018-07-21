@@ -1,0 +1,25 @@
+{
+  "name": "Portfolio",
+  "short_name": "Portfolio",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#000",
+  "description": "Portfolio Tomasza Kumor",
+  "icons": [{
+    "src": "/foto/icons/30x30.jpg",
+    "sizes": "30x30",
+    "type": "image/jpg"
+  }, {
+    "src": "/foto/icons/90x90.jpg",
+    "sizes": "90x90",
+    "type": "image/jpg"
+  }, {
+    "src": "/foto/icons/160x160.jpg",
+    "sizes": "160x160",
+    "type": "image/jpg"
+  }, {
+    "src": "/foto/icons/192x192.jpg",
+    "sizes": "192x192",
+    "type": "image/jpg"
+  }]
+}

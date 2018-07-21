@@ -1,0 +1,6 @@
+@import url('../../root.css');
+
+body::after,
+body::before{
+	display: none;
+}

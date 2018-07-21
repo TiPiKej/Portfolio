@@ -1,0 +1,126 @@
+/* Author: Tomasz Kumor */
+/* http://tomekkumor.000webhostapp.com */
+/* line 1, C:/strony/portfolio/scss/partials/_basic.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 25px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 9, C:/strony/portfolio/scss/partials/_basic.scss */
+body {
+  overflow-x: hidden;
+}
+
+/* line 8, C:/strony/portfolio/scss/loader.scss */
+.loader_wrapper {
+  height: 100vh;
+  min-height: 80vmin;
+  width: 100vw;
+  min-width: 80vmin;
+  z-index: 99999;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #212121;
+  transition: opacity .5s;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* line 26, C:/strony/portfolio/scss/loader.scss */
+.loader_wrapper .loader {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* line 34, C:/strony/portfolio/scss/loader.scss */
+.loader_wrapper .loader::before, .loader_wrapper .loader::after {
+  content: '';
+  background: #fff;
+  border-radius: 100%;
+}
+
+/* line 40, C:/strony/portfolio/scss/loader.scss */
+.loader_wrapper .loader::before {
+  height: 100%;
+  width: 100%;
+  -webkit-animation: animation_loader 1s cubic-bezier(0.66, 0.37, 0.96, 0.8) infinite;
+  -moz-animation: animation_loader 1s cubic-bezier(0.66, 0.37, 0.96, 0.8) infinite;
+  -o-animation: animation_loader 1s cubic-bezier(0.66, 0.37, 0.96, 0.8) infinite;
+  animation: animation_loader 1s cubic-bezier(0.66, 0.37, 0.96, 0.8) infinite;
+}
+
+/* line 47, C:/strony/portfolio/scss/loader.scss */
+.loader_wrapper .loader::after {
+  height: 80%;
+  width: 80%;
+  position: absolute;
+  opacity: .8;
+  -webkit-animation: animation_loader 1s cubic-bezier(0.08, 0.4, 0.65, 0.82) infinite;
+  -moz-animation: animation_loader 1s cubic-bezier(0.08, 0.4, 0.65, 0.82) infinite;
+  -o-animation: animation_loader 1s cubic-bezier(0.08, 0.4, 0.65, 0.82) infinite;
+  animation: animation_loader 1s cubic-bezier(0.08, 0.4, 0.65, 0.82) infinite;
+}
+
+@-webkit-keyframes animation_loader {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+@-moz-keyframes animation_loader {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+@-o-keyframes animation_loader {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+@keyframes animation_loader {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+/*# sourceMappingURL=../css/loader.map */

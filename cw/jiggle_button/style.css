@@ -1,0 +1,56 @@
+@import url('../root.css');
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.button{
+	text-decoration: none;
+	width: 200px;
+	line-height: 2em;
+	background: #e3e3e3;
+	text-align: center;
+	border-radius: 6px;
+	color: #000;
+	font-weight: 700;
+	transition: all .5s cubic-bezier(.68,-0.55,.27,1.55);
+	animation: shakealways 3s infinite;
+}
+
+.button:hover{
+	animation: shake .5s;
+}
+
+.button:focus{
+	letter-spacing: 4px;
+}
+
+@keyframes shake{
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.4);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes shakealways{
+	0%, 80%, 100%{
+		transform: rotate(0deg);
+	}
+
+	90%{
+		transform: rotate(3deg);
+	}
+
+	85%, 95%{
+		transform: rotate(-5deg);
+	}
+}

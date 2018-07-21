@@ -1,0 +1,113 @@
+@import url('../root.css');
+
+#background_checkbox{
+    background: black;
+    height: 300px;
+    width: 400px;
+    border-radius: 6px;
+    margin: calc(50vh - (300px /2)) auto;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.check > input[type="checkbox"]{
+	display: none;
+}
+
+.handle{
+	height: 40px;
+	width: 15px;
+	position: relative;
+	cursor: pointer;
+
+	background: white;
+	background: -webkit-linear-gradient(
+        to right,
+        #fff 0%,
+        #daa2a2 100%
+	);
+	background: -o-linear-gradient(
+        to right,
+        #fff 0%,
+        #daa2a2 100%
+	);
+	background: linear-gradient(
+        to right,
+        #fff 0%,
+        #daa2a2 100%
+	);
+}
+
+.handle::before,
+.handle::after{
+	content: '';
+	background: #997c7c;
+	height: 5px;
+	position: absolute;
+	width: 100%;
+}
+
+.handle::before{
+	top: -5px;
+	left: 0;
+	border-radius: 3px 3px 0 0;
+}
+
+.handle::after{
+	bottom: -5px;
+	left: 0;
+	border-radius:  0 0 3px 3px;
+}
+
+.handle > div{
+	position: absolute;
+	bottom: calc(100% + 4px);
+	left: 2px;
+	width: 10px;
+	height: 0;
+	transition: height .2s;
+	border-radius: 6px 6px 0 0;
+    filter: blur(1px);
+}
+
+input[type="checkbox"]:checked + .handle > div{
+	height: 200px;
+}
+
+.yoda {
+    background: rgb(135, 220, 90);
+    background: linear-gradient(
+    to right, 
+    rgb(135, 220, 90) 0%, 
+    rgb(254, 254, 254) 30%, 
+    rgb(254, 254, 254) 50%, 
+    rgb(254, 254, 254) 70%, 
+    rgb(135, 220, 90) 100%
+  );
+}
+
+.vader {
+    background: rgb(229, 17, 21);
+    background: linear-gradient(
+    to right, 
+    rgba(229, 17, 21, 1) 0%, 
+    rgba(254, 254, 254, 1) 30%, 
+    rgba(254, 254, 254, 1) 47%, 
+    rgba(254, 254, 254, 1) 71%, 
+    rgba(229, 17, 21, 1) 100%
+  );
+}
+
+.windu {
+    background: rgb(202, 116, 221);
+    background: linear-gradient(
+    to right, 
+    rgba(202,116,221,1) 0%,
+    rgba(254,254,254,1) 30%,
+    rgba(254,254,254,1) 47%,
+    rgba(254,254,254,1) 71%,
+    rgba(202,116,221,1) 100%
+  );
+}

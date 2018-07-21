@@ -1,0 +1,48 @@
+{
+	"Jezyki": {
+		"html": {
+			"active": true,
+			"name": "HTML",
+			"description": "<a href=\"https://pl.wikipedia.org/wiki/HTML\">HTML (ang. HyperText Markup Language)</a> – hipertekstowy język znaczników, wykorzystywany do tworzenia dokumentów hipertekstowych."
+		},
+		"css": {
+			"active": true,
+			"name": "css",
+			"description": "<a href=\"https://pl.wikipedia.org/wiki/Kaskadowe_arkusze_styl%C3%B3w\">Cascading Style Sheets, w skrócie CSS)</a> to język służący do opisu formy prezentacji (wyświetlania) stron <a href=\"https://pl.wikipedia.org/wiki/World_Wide_Web\">WWW</a>. CSS został opracowany przez organizację <a href=\"https://pl.wikipedia.org/wiki/World_Wide_Web_Consortium\">W3C</a> w 1996 r. jako potomek języka <a href=\"https://pl.wikipedia.org/wiki/Document_Style_Semantics_and_Specification_Language\">DSSSL</a> przeznaczony do używania w połączeniu z <a href=\"https://pl.wikipedia.org/wiki/SGML\">SGML</a>-em."
+		},
+		"js": {
+			"active": true,
+			"name": "js",
+			"description": "<a href=\"https://pl.wikipedia.org/wiki/JavaScript\">JavaScript (krócej JS)</a> – skryptowy język programowania, stworzony przez firmę Netscape, najczęściej stosowany na stronach internetowych. Twórcą JavaScriptu jest <a href=\"https://pl.wikipedia.org/wiki/Brendan_Eich\">Brendan Eich</a>."
+		},
+		"php": {
+			"active": false,
+			"name": "php",
+			"description": "<a href=\"https://pl.wikipedia.org/wiki/PHP\">PHP</a> – interpretowany skryptowy język programowania zaprojektowany do generowania stron internetowych i budowania aplikacji webowych w czasie rzeczywistym."
+		}
+	},
+	"Frameworki":{
+		"jquery": {
+			"active": true,
+			"name": "jquery",
+			"description": "<a href=\"https://pl.wikipedia.org/wiki/JQuery\">jQuery</a> – lekka biblioteka programistyczna dla języka <a href=\"https://pl.wikipedia.org/wiki/JavaScript\">JavaScript</a>, ułatwiająca korzystanie z JavaScriptu.<br><u>W sumie to biblioteka, ale co tam</u> ;)"
+		},
+		"bootstrap": {
+			"active": true,
+			"name": "bootstrap",
+			"description": "<a href=\"https://pl.wikipedia.org/wiki/Bootstrap_(framework)\">Bootstrap</a> - framework <a href=\"https://pl.wikipedia.org/wiki/Kaskadowe_arkusze_styl%C3%B3w\">CSS</a>, rozwijany przez programistów Twittera, wydawany na licencji <a href=\"https://pl.wikipedia.org/wiki/Licencja_MIT\">MIT</a>. Zawiera zestaw przydatnych narzędzi ułatwiających tworzenie interfejsu graficznego stron oraz aplikacji internetowych."
+		}
+	},
+	"Preprocesory":{
+		"sass / scss": {
+			"active": true,
+			"name": "scss / sass",
+			"description": "<a href=\"https://en.wikipedia.org/wiki/Sass_(stylesheet_language)\">SASS</a> (<i>Syntactically Awesome Style Sheets</i>)  is a style sheet language initially designed by Hampton Catlin and developed by Natalie Weizenbaum. After its initial versions, Weizenbaum and Chris Eppstein have continued to extend Sass with SassScript, a simple scripting language used in Sass files."
+		},
+		"stylus": {
+			"active": true,
+			"name": "stylus",
+			"description": "<a href=\"https://en.wikipedia.org/wiki/Stylus_(stylesheet_language)\">Stylus</a> is a dynamic stylesheet preprocessor language that is compiled into Cascading Style Sheets. Its design is influenced by Sass and LESS. It's regarded as the fourth most used CSS preprocessor syntax. It was created by TJ Holowaychuk, a former programmer for Node.js and the creator of the Luna language. It is written in JADE and Node.js."
+		}
+	}
+}

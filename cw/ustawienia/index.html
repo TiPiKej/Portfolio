@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Ustawienia</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+	<div id="container">
+
+		<!-- emmet -->
+		<div class="usta_wrapper">
+			<p class="title"><a title="Preferences > Package Settings > Emmet > Setting - User">Emmet:</a></p>
+			
+			<textarea name="emmet" id="emmet" readonly>
+{
+	"snippets": {
+		"variables": {
+			"lang": "pl",
+			"locale": "pl-PL",
+			"charset": "UTF-8",
+			"indentation": "\t",
+			"newline": "\n"
+		},
+
+		"html": {
+			"abbreviations": {
+				"m-width": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>",
+				"m-explorer": "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\" />",
+				"l-style": "<link rel=\"stylesheet\" type=\"text/css\" href=\"${1}\"/>",
+				"script": "<script type=\"text/javascript\"></script>",
+				"l-script": "<script type=\"text/javascript\" src=\"${1}\"></script>",
+				"miniaturka": "<link rel=\"Shortcut icon\" href=\"${1}\" />",
+
+				"html:5": "!!!+html[lang=${locale}]>(head>meta[charset=${charset}]+m-width+m-explorer+title{${1:Dokument}})+body"
+			}
+		},
+
+		"css": {
+			"abbreviations": {
+				"import": "@import url('${1:root.css}');",
+				"*": "*{\nmargin: 0;\npadding: 0;\nbox-sizing: border-box;\n}"
+			}
+		}
+	}
+}</textarea>
+		</div>
+
+		<!-- sublime text -->
+
+		<div class="usta_wrapper">
+			<p class="title"><a title="Preferences > Settings">Sublime text:</a></p>
+			<textarea name="sublime" id="sublime" readonly>
+{
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"font_face": "Fira Code",
+	"font_size": 13,
+	"update_check": false,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"overlay_scroll_bars": "enabled",
+	"save_on_focus_lost": true,
+	"tab_size": 2,
+	"theme": "Adaptive.sublime-theme"
+}
+
+</textarea>
+		</div>
+
+		<!-- instalacja emmet -->
+
+		<div class="usta_wrapper">
+			<p class="title"><a title="Preferences > Settings">INSTALACJA EMMET W ST3:</a></p>
+			<textarea name="sublime" id="sublime" readonly>
+
+INSTALACJA EMMET W ST3
+
+
+1. wciskamy: 
+	ctrl + `
+
+2. wpisujemy: 
+	import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) 
+
+3. wciskamy: 
+	ctrl + ` 
+
+	(żeby wylaczyc konsole)
+
+4. wciskamy: 
+	ctrl + shift + p
+
+5. wpisujemy: 
+	install
+
+	 : powinno wyskoczyc zeby zainstalowac paczke
+	 wybieramy emmet
+
+
+
+:::TESTOWY KOD:::
+
+html:5>.test
+
+teraz: ctrl + e
+
+			</textarea>
+		</div>
+
+		<!-- visual studio -->
+
+		<div class="usta_wrapper">
+			<p class="title"><a title="File > Preferences > Settings">Visual Studio:</a></p>
+			<textarea name="sublime" id="sublime" readonly>
+{
+	"git.ignoreMissingGitWarning": true,
+	"files.autoSave": "on",
+	"editor.fontSize": 15,
+	"editor.tabSize": 2,
+	"emmet.triggerExpansionOnTab": true
+}</textarea>
+		</div>
+
+		<!-- installing Fira Code -->
+
+		<div class="usta_wrapper">
+			<p class="title"><a title="File > Preferences > Settings">Visual Studio:</a></p>
+			<textarea name="sublime" id="sublime" readonly>
+1. Pobieramy ze strony paczke: https://github.com/tonsky/FiraCode/releases/download/1.205/FiraCode_1.205.zip
+2. Wypakowywujemy
+3. Instalujemy czcionki z folderu "tff"
+			</textarea>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="../../js/lab.js"></script>
+	<script type="text/javascript" src="settings.js"></script>
+</body>
+</html>

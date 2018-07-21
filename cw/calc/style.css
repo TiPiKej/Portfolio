@@ -1,0 +1,82 @@
+@import url("../root.css");
+
+
+.calc{
+	width: 300px;
+	border: 2px solid #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: .3s all;
+}
+
+.buttons_wrapper > *{
+	padding: 3px 0;
+	color: #fff;
+}
+
+.number_box{
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-bottom: 1px solid #000;
+	text-align: right;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.buttons_wrapper{
+	background: #fff;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 15px;
+	padding: 15px;
+}
+
+.calc_button{
+	background: #aaa;
+	border: 1px solid #000;
+	border-radius: 6px;
+	grid-column: span 1;
+	transition: .3s all;
+}
+
+.calc button:hover{
+	background: #3b3b3b;
+	cursor: pointer;
+}
+
+.calc_button:nth-of-child(0){
+	background: #000;
+}
+
+.calc_cancel,
+.calc_zero{
+	grid-column: span 3;
+}
+
+.calc_cancel{
+	background: #3572DB;
+}
+
+.calc_equal{
+	background: #28D060;
+}
+
+.calc_cancel:hover{
+	background: #3E5D93!important;
+}
+
+.calc_equal:hover{
+	background: #3FA762!important;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
