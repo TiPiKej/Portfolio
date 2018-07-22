@@ -277,7 +277,7 @@ let dom = {
 												if(resp[name][lang]['source'] !== undefined) {
 													const sources = resp[name][lang]['source'];
 
-													dane += `<br><br><hr><p style="margin-top: 10px; font-size: 20px;">From:</p>`;
+													dane += `<br><br><hr><p style="margin-top: 10px; font-size: 20px;">Source:</p>`;
 													dane += "<ul>";
 													Array.from(sources).forEach(el => {
 														dane += `<li><a style="font-size: .6em;" href="${el}">${el}</a></li>`;
