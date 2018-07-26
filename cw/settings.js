@@ -12,7 +12,8 @@ const pokaz_zakladki = () => {
 				{"name": "Search bar","directory": "search_bar", "nr": 8},
 				{"name": "Scroll-Spy Navbar","directory": "nav", "nr": 9},
 				{"name": "Lazy Loading Animal Memes","directory": "lazyLoading", "nr": 10},
-				{"name": "Arrays","directory": "arrays", "nr": 11}
+				{"name": "Arrays","directory": "arrays", "nr": 11},
+				{"name": "Manipulation","directory": "manipulation", "nr": 12}
 			]
 		},
 		{"name": "Loaders","directory": "loaders"},
