@@ -1,0 +1,37 @@
+@import url('../../root.css');
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+#videos_wrapper{
+	width: 60vw;
+	min-width: 200px;
+	min-height: 500px;
+	background: #333;
+}
+
+#videos_wrapper #video{
+	margin: 10px;
+	width: calc(100% - 20px);
+	height: 400px;
+	background: #000;
+}
+
+#videos_wrapper #thumbnail_wrapper{
+	width: 100%;
+}
+
+#videos_wrapper .thumbnail{
+	height: 100px;
+	margin: 10px;
+	margin-top: 5px;
+}
+
+#video .yt_video{
+	width: 100%;
+	height: 400px;
+}

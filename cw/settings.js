@@ -3,22 +3,28 @@ const pokaz_zakladki = () => {
 		{"name": "Ustawienia","directory": "ustawienia"},
 		{"name": "Code Challenge", "list": true, "nameoflist": "codechallenge",
 			"elements": [
-				{"name": "Jiggle Button","directory": "jiggle_button", "nr": 1},
-				{"name": "Kalkulator","directory": "calc", "nr": 2},
-				{"name": "Checkbox","directory": "check", "nr": 3},
-				{"name": "Monster","directory": "monster", "nr": 4},
-				{"name": "Videos block","directory": "videos", "nr": 5},
-				{"name": "Timer","directory": "timer", "nr": 6},
-				{"name": "Search bar","directory": "search_bar", "nr": 8},
-				{"name": "Scroll-Spy Navbar","directory": "nav", "nr": 9},
-				{"name": "Lazy Loading Animal Memes","directory": "lazyLoading", "nr": 10},
-				{"name": "Arrays","directory": "arrays", "nr": 11},
-				{"name": "Manipulation","directory": "manipulation", "nr": 12}
+				{"name": "Jiggle Button","directory": "codeChallenge/jiggle_button", "nr": 1},
+				{"name": "Kalkulator","directory": "codeChallenge/calc", "nr": 2},
+				{"name": "Checkbox","directory": "codeChallenge/check", "nr": 3},
+				{"name": "Monster","directory": "codeChallenge/monster", "nr": 4},
+				{"name": "Videos block","directory": "codeChallenge/videos", "nr": 5},
+				{"name": "Timer","directory": "codeChallenge/timer", "nr": 6},
+				{"name": "Search bar","directory": "codeChallenge/search_bar", "nr": 8},
+				{"name": "Scroll-Spy Navbar","directory": "codeChallenge/nav", "nr": 9},
+				{"name": "Lazy Loading Animal Memes","directory": "codeChallenge/lazyLoading", "nr": 10},
+				{"name": "Arrays","directory": "codeChallenge/arrays", "nr": 11},
+				
+				{"name": "Manipulation","directory": "codeChallenge/manipulation", "nr": 12}
 			]
 		},
 		{"name": "Loaders","directory": "loaders"},
-		{"name": "Buttony","directory": "button"},
-		{"name": "Input","directory": "input"},
+		{"name": "Buttony", "list": true, "nameoflist": "buttons",
+			"elements": [
+				{"name": "Android buttons", "directory": "button/android"},
+				{"name": "Button to copying to clipboard", "directory": "button/clipboard"},
+				{"name": "Input","directory": "button/input"}
+			]
+		},
 		{"name": "Powrót do strony głównej","directory": ""}
 	];
 
@@ -54,7 +60,11 @@ const pokaz_zakladki = () => {
 									const a = document.createElement('a');
 												a.href = `${element['directory']}/`;
 									const button = document.createElement('button');
-												button.innerText = `#${element['nr']} ${element['name']}`;
+												button.innerText = element['nr'] !== undefined? (
+													`#${element['nr']} ${element['name']}`
+												):(
+													`${element['name']}`
+												);
 
 									a.appendChild(button);
 									p.appendChild(a);
@@ -86,6 +96,6 @@ $LAB
 				pokaz_zakladki();
 			}
 		)
-	.script('button/button_z_jquery.js')
+	.script('button/android/button_z_jquery.js')
 	.script('host.js')
 })();
