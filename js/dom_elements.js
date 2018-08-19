@@ -148,39 +148,43 @@ let dom = {
 
 	pages: () => {
 		const c_pages = document.getElementById('pages_content');
+		const c_apps = document.getElementById('aplications_content');
 
 		fetch('/js/json/pages.json')
 			.then(resp => resp.json())
-			.then(resp => {
-				Object.keys(resp).map(e => {
+			.then(json => {
+				Object.keys(json).map(what => {
+					Array.from(json[what]).map(obj => {
+						const strona = document.createElement('a');
+									strona.className = 'page_wrapper';
+									strona.href = obj['href'];
+									strona.target = '_blank';
+
+						const title = document.createElement('p');
+									title.className = 'page_title';
+									title.innerHTML = obj['title'];
+
+						const thumb_w = document.createElement('div');
+									thumb_w.className = 'page_thumbnail';
+
+						const thumb = document.createElement('div');
+									thumb.className = 'img';
+									thumb.dataset.src = obj['dataSrc'];
+									thumb.style.backgroundImage = `url('${obj['src']}')`;
+									thumb.style.backgroundRepeat = 'no-repeat';
+									thumb.style.backgroundPositionX = 'center';
+									thumb.style.backgroundPositionY = 'center';
+									thumb.style.backgroundSize = 'cover';
+
+						thumb_w.appendChild(thumb);
+
+						strona.appendChild(thumb_w);
+						strona.appendChild(title);
+
+						if(what === 'pages') c_pages.appendChild(strona);
+						else if(what === 'apps') c_apps.appendChild(strona);
+					})
 					
-					const strona = document.createElement('a');
-								strona.className = 'page_wrapper';
-								strona.href = resp[e]['href'];
-								strona.target = '_blank';
-
-					const title = document.createElement('p');
-								title.className = 'page_title';
-								title.innerHTML = resp[e]['title'];
-
-					const thumb_w = document.createElement('div');
-								thumb_w.className = 'page_thumbnail';
-
-					const thumb = document.createElement('div');
-								thumb.className = 'img';
-								thumb.dataset.src = resp[e]['dataSrc'];
-								thumb.style.backgroundImage = `url('${resp[e]['src']}')`;
-								thumb.style.backgroundRepeat = 'no-repeat';
-								thumb.style.backgroundPositionX = 'center';
-								thumb.style.backgroundPositionY = 'center';
-								thumb.style.backgroundSize = 'cover';
-
-					thumb_w.appendChild(thumb);
-
-					strona.appendChild(thumb_w);
-					strona.appendChild(title);
-
-					c_pages.appendChild(strona);
 				});
 			})
 			.then(() => {
