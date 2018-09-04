@@ -3,7 +3,8 @@
   "short_name": "Portfolio",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#000",
+  "background_color": "#000000",
+  "theme_color": "#000000",
   "description": "Portfolio Tomasza Kumor",
   "icons": [{
     "src": "/foto/icons/30x30.jpg",
