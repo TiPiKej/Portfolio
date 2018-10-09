@@ -1,42 +1,48 @@
 {
-	"pages": [
-		{
-			"title": "Moje poprzednie portfolio",
-			"href": "http://tomeczeq.cba.pl/",
-			"src": "https://res.cloudinary.com/duy90jkv5/image/upload/w_10/v1526805567/1.jpg",
-			"dataSrc": "https://res.cloudinary.com/duy90jkv5/image/upload/v1526805567/1.jpg"
-		},
-		{
-			"title": "Moje inne portfolio",
-			"href": "http://tipi.cba.pl/portfoilo/",
-			"src": "https://res.cloudinary.com/duy90jkv5/image/upload/w_10/v1526805567/2.jpg",
-			"dataSrc": "https://res.cloudinary.com/duy90jkv5/image/upload/v1526805567/2.jpg"
-		},
-		{
-			"title": "Strona z systemem logowania",
-			"href": "http://tomeczeq.000webhostapp.com/strona.php",
-			"src": "https://res.cloudinary.com/duy90jkv5/image/upload/w_10/v1526805567/3.jpg",
-			"dataSrc": "https://res.cloudinary.com/duy90jkv5/image/upload/v1526805567/3.jpg"
-		}
-	],
-	"apps": [
-		{
-			"title": "Generator losowych haseł",
-			"href": "https://tipikej.github.io/generator/",
-			"src": "https://res.cloudinary.com/duy90jkv5/image/upload/w_10/v1534682250/generator.png",
-			"dataSrc": "https://res.cloudinary.com/duy90jkv5/image/upload/v1534682250/generator.png"
-		},
-		{
-			"title": "Gra w szubienice",
-			"href": "https://tipikej.github.io/szubienica/",
-			"src": "https://res.cloudinary.com/duy90jkv5/image/upload/w_10/v1534682250/szubienica.png",
-			"dataSrc": "https://res.cloudinary.com/duy90jkv5/image/upload/v1534682250/szubienica.png"
-		},
-		{
-			"title": "Gra w snake'a",
-			"href": "https://tipikej.github.io/snake/",
-			"src": "https://res.cloudinary.com/duy90jkv5/image/upload/w_10/v1534682250/snake.png",
-			"dataSrc": "https://res.cloudinary.com/duy90jkv5/image/upload/v1534682250/snake.png"
-		}
-	]
+  "pages": [
+    {
+      "title": "Moje poprzednie portfolio",
+      "href": "http://tomeczeq.cba.pl/",
+      "src": "https://res.cloudinary.com/duy90jkv5/image/upload/w_10/v1526805567/1.jpg",
+      "dataSrc": "https://res.cloudinary.com/duy90jkv5/image/upload/v1526805567/1.jpg"
+    },
+    {
+      "title": "Moje inne portfolio",
+      "href": "http://tipi.cba.pl/portfoilo/",
+      "src": "https://res.cloudinary.com/duy90jkv5/image/upload/w_10/v1526805567/2.jpg",
+      "dataSrc": "https://res.cloudinary.com/duy90jkv5/image/upload/v1526805567/2.jpg"
+    },
+    {
+      "title": "Strona z systemem logowania",
+      "href": "http://tomeczeq.000webhostapp.com/strona.php",
+      "src": "https://res.cloudinary.com/duy90jkv5/image/upload/w_10/v1526805567/3.jpg",
+      "dataSrc": "https://res.cloudinary.com/duy90jkv5/image/upload/v1526805567/3.jpg"
+    }
+  ],
+  "apps": [
+    {
+      "title": "Generator losowych haseł",
+      "href": "https://tipikej.github.io/generator/",
+      "src": "https://res.cloudinary.com/duy90jkv5/image/upload/w_10/v1534682250/generator.png",
+      "dataSrc": "https://res.cloudinary.com/duy90jkv5/image/upload/v1534682250/generator.png"
+    },
+    {
+      "title": "Gra w szubienice",
+      "href": "https://tipikej.github.io/szubienica/",
+      "src": "https://res.cloudinary.com/duy90jkv5/image/upload/w_10/v1534682250/szubienica.png",
+      "dataSrc": "https://res.cloudinary.com/duy90jkv5/image/upload/v1534682250/szubienica.png"
+    },
+    {
+      "title": "Gra w snake'a",
+      "href": "https://tipikej.github.io/snake/",
+      "src": "https://res.cloudinary.com/duy90jkv5/image/upload/w_10/v1534682250/snake.png",
+      "dataSrc": "https://res.cloudinary.com/duy90jkv5/image/upload/v1534682250/snake.png"
+    },
+    {
+      "title": "Fractal tree",
+      "href": "https://tipikej.github.io/fractalTree/",
+      "src": "https://res.cloudinary.com/duy90jkv5/image/upload/w_10/v1539092382/fractalTree.png",
+      "dataSrc": "https://res.cloudinary.com/duy90jkv5/image/upload/v1539092382/fractalTree.png"
+    }
+  ]
 }
