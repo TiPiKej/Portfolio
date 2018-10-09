@@ -1,0 +1,93 @@
+{
+	"films": {
+		"1": {
+			"thumbnail": "http://1.fwcdn.pl/wv/13/38/11338/330588_1.11338.2.jpg",
+			"tytul": "Szybcy i wściekli",
+			"video": "http://mm.filmweb.pl/30588/fstfurious_trlr2_t1.360p.mp4",
+			"description": "Policjant przenika do grupy organizującej nielegalne wyścigi samochodowe. Sytuacja komplikuje się, gdy poznaje bliżej siostrę lidera przestępców.",
+			"rok": 2001,
+			"link": "http://www.filmweb.pl/film/Szybcy+i+w%C5%9Bciekli-2001-30588"
+		},
+
+		"2": {
+			"thumbnail": "http://1.fwcdn.pl/ph/53/51/595351/540408_1.1.jpg",
+			"tytul": "Paddington",
+			"video": "http://mm.filmweb.pl/595351/paddington___official_international_trailer__3___from_the_producer_of_harry_potter___full_hd__.720p.mp4",
+			"description": "Pluszowy miś szuka szczęścia w wielkim mieście.",
+			"rok": 2014,
+			"link": "http://www.filmweb.pl/film/Paddington-2014-595351"
+		},
+
+		"3": {
+			"thumbnail": "http://1.fwcdn.pl/wv/73/18/17318/z01.17318.2.jpg",
+			"tytul": "Auta",
+			"video": "http://mm.filmweb.pl/120749/cars_tlr_1_h1080p.720p.mp4",
+			"description": "Ambitny samochód wyścigowy przypadkiem trafia do małego miasteczka, gdzie wyrządza znaczne szkody. Zanim opuści to miejsce, będzie musiał wszystko naprawić.",
+			"rok": 2006,
+			"link": "http://www.filmweb.pl/Auta"
+		},
+
+		"4": {
+			"thumbnail": "http://1.fwcdn.pl/ph/60/42/36042/215933.1.jpg",
+			"tytul": "Gdzie jest Nemo?",
+			"video": "http://mm.filmweb.pl/36042/gdzie_jest_nemo_3d_trailer_pl.720p.mp4",
+			"description": "Błazenek Marlin rusza na pomoc swojemu synkowi Nemo, który został wyłowiony z rafy koralowej. W poszukiwaniach towarzyszy mu zapominalska rybka Dory.",
+			"rok": 2003,
+			"link": "http://www.filmweb.pl/Gdzie.Jest.Nemo"
+		},
+
+		"5": {
+			"thumbnail": "http://1.fwcdn.pl/wv/66/97/26697/hunger.26697.2.jpg",
+			"tytul": "Igrzyska śmierci",
+			"video": "http://mm.filmweb.pl/504776/igrzyskasmierci_zwiastun_nr1_pl.720p.mp4",
+			"description": "W państwie Panem co roku odbywają się Głodowe Igrzyska - walka na śmierć i życie między przedstawicielami dwunastu Dystryktów. Gdy młodsza siostra Katniss zostaje wylosowana do zawodów, dziewczyna bez wahania zajmuje jej miejsce. ",
+			"rok": 2012,
+			"link": "http://www.filmweb.pl/film/Igrzyska+%C5%9Bmierci-2012-504776"
+		},
+
+		"6": {
+			"thumbnail": "http://1.fwcdn.pl/wv/41/11/34111/mazerunner_2.34111.2.jpg",
+			"tytul": "Więzień Labiryntu",
+			"video": "http://mm.filmweb.pl/609757/maze_runner_trailer_nr2.720p.mp4",
+			"description": "Nastoletni Thomas zostaje uwięziony w tajemniczym labiryncie, z którego próbuje się wydostać.",
+			"rok": 2014,
+			"link": "http://www.filmweb.pl/film/Wi%C4%99zie%C5%84+labiryntu-2014-609757"
+		},
+
+		"7": {
+			"thumbnail": "http://1.fwcdn.pl/wv/07/08/40708/thumbnail.40708.2.jpg",
+			"tytul": "Gorzka siedemnastka",
+			"video": "http://mm.filmweb.pl/768719/the_edge_of_seventeen_official_red_band_trailer_2.720p.mp4",
+			"description": "Nadine nie jest szczęśliwą nastolatką. Los dziewczyny staje się jeszcze bardziej nieznośny, gdy starszy brat zostaje chłopakiem jej najlepszej przyjaciółki.",
+			"rok": 2016,
+			"link": "http://www.filmweb.pl/film/Gorzka+siedemnastka-2016-768719"
+		},
+
+		"8": {
+			"thumbnail": "http://1.fwcdn.pl/wv/89/97/38997/snap1.38997.2.jpg",
+			"tytul": "Legion samobójców",
+			"video": "http://mm.filmweb.pl/725816/legion_samobojcow__zwiastun___4_pl.720p.mp4",
+			"description": "Grupa złoczyńców otrzymuje od rządu szansę na odkupienie, wypełniając misję zagrażającą ich życiu.",
+			"rok": 2016,
+			"link": "http://www.filmweb.pl/film/Legion+samob%C3%B3jc%C3%B3w-2016-725816"
+		},
+
+		"9": {
+			"thumbnail": "http://1.fwcdn.pl/wv/11/87/21187/z01.21187.2.jpg",
+			"tytul": "Załoga G",
+			"video": "http://mm.filmweb.pl/395641/g_force_full_hd_1080p_trailer.720p.mp4",
+			"description": "Załoga świetnie wyszkolonych świnek morskich podejmuje się niebezpiecznej misji. Wyposażone w najnowocześniejsze gadżety zwierzaki to: Darwin – ambitny przywódca grupy, Walczak – transport, uzbrojenie i ekstremalne rozwiązania, Juarez – pełna wdzięku specjalistka sztuk walki, śledczy Plujka, pracujący w cyber wywiadzie Brylus oraz wyluzowany żółtodziób Kędzior. Ten zgrany zespół musi za wszelką cenę powstrzymać pewnego multimilionera, który chce zawładnąć światem za pomocą odpowiednio zaprogramowanego sprzętu gospodarstwa domowego.",
+			"rok": 2009,
+			"link": "http://www.filmweb.pl/film/Za%C5%82oga+G-2009-395641"
+		},
+
+		"10": {
+			"thumbnail": "http://1.fwcdn.pl/wv/96/08/39608/thumbnail.39608.2.jpg",
+			"tytul": "Sausage Party",
+			"video": "http://mm.filmweb.pl/599051/sausage_party___zwiastun_a.720p.mp4",
+			"description": "Parówka wyrusza w podróż, aby dowiedzieć się prawdy o swoim pochodzeniu.",
+			"rok": 2016,
+			"link": "http://www.filmweb.pl/film/Sausage+Party-2016-599051"
+		}
+	}
+}

@@ -1,0 +1,97 @@
+@import url('../root.css');
+
+#wrapper{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	max-width: 1600px;
+	margin: auto;
+}
+
+#wrapper .loader{
+	background: var(--primary_color_fourth_way);
+	padding: 20px;
+	margin: 60px;
+	border-radius: 6px;
+	transition: background .5s;
+	cursor: pointer;
+	display: block;
+	text-decoration: none;
+	color: #000;
+}
+
+
+#wrapper .loader:hover{
+	background: var(--primary_color_fifth_way);
+}
+
+#wrapper p{
+	text-align: center;
+	padding: 20px 0;
+	padding-top: 0;
+}
+
+#wrapper iframe{
+	border: solid 1px var(--primary_color_fifth_way);
+	border-radius: 3px;
+}
+
+#wrapper .loaders_buttons_wrapper{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	position: relative;
+}
+
+.loaders_buttons_wrapper .loaders_buttons,
+.loaders_buttons_wrapper .loaders_menu{
+	padding: 10px 40px;
+	background: var(--secondary_color_third_way);
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	transition: background .2s, color .2s;
+	list-style-type: none;
+}
+
+.loaders_buttons_wrapper .loaders_buttons:hover{
+	background: var(--secondary_color_second_way);
+	color: var(--primary_color_third_way);
+}
+
+.loaders_buttons_wrapper .loaders_menu{
+	transform: rotate(180deg);
+}
+
+.loaders_buttons_wrapper .loaders_menu.active{
+	transform: rotate(0deg);
+}
+
+.loaders_buttons_wrapper li{
+	margin-top: 10px;
+	display: none;
+	position: absolute;
+}
+
+.loaders_buttons_wrapper li:nth-child(2){
+	top: 50px;
+}
+
+.loaders_buttons_wrapper li:nth-child(3){
+	top: 110px;
+}
+
+.loaders_buttons_wrapper li:nth-child(4){
+	top: 170px;
+}
+
+.loaders_buttons_wrapper > .loaders_menu.active
+~
+li{
+	display: block;
+}

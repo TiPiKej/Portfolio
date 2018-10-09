@@ -1,0 +1,72 @@
+/* Author: Tomasz Kumor */
+/* http://tomekkumor.000webhostapp.com */
+
+@import "partials/variables";
+@import "partials/mixin";
+@import "partials/basic";
+
+.loader_wrapper{
+			height: 100vh;
+	min-height: 80vmin;
+			width: 100vw;
+	min-width: 80vmin;
+	z-index: 99999;
+
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: $loader_background;
+	transition: opacity .5s;
+	position: fixed;
+	top: 0;
+	left: 0;
+
+
+	.loader{
+		width: $loader_size;
+		height: $loader_size;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+
+		&::before, &::after{
+			content: '';
+			background: $loader_color;
+			border-radius: 100%;
+		}
+
+		&::before{
+			height: 100%;
+			width: 100%;
+			
+			@include animation(animation_loader, $loader_speed, cubic-bezier(.66,.37,.96,.8), infinite);
+		}
+
+		&::after{
+			height: 80%;
+			width: 80%;
+			position: absolute;
+			opacity: .8;
+
+			@include animation(animation_loader, $loader_speed, cubic-bezier(.08,.4,.65,.82), infinite);
+		}
+
+	}
+}
+
+@include keyframes( animation_loader ) {
+	0% {
+		transform: scale(0);
+	}
+
+	80% {
+		transform: scale(.8);
+	}
+
+	100% {
+		opacity: 0;
+		transform: scale(1);
+	}
+}
