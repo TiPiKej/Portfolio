@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.2.0",
   "description": "",
-  "homepage": "https://tipikej.github.io/portfolio",
+  "homepage": "https://tipikej.github.io/Portfolio",
   "main": "index.js",
   "scripts": {
     "deploy": "gh-pages -d dist",
