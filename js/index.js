@@ -1,5 +1,5 @@
 (() => {
-  const pre = document.documentURI;
+  const pre = document.URL.indexOf("github") !== -1 ? "/Portfolio" : "/";
 
   $LAB
     .script(pre + "/js/core.min.js")
