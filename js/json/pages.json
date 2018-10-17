@@ -55,6 +55,12 @@
       "href": "https://tipikej.github.io/sevenSegmentsDisplay/",
       "src": "https://res.cloudinary.com/duy90jkv5/image/upload/w_10/v1539630698/sevenSegment.png",
       "dataSrc": "https://res.cloudinary.com/duy90jkv5/image/upload/v1539630698/sevenSegment.png"
+    },
+    {
+      "title": "Flappy Bird",
+      "href": "https://tipikej.github.io/flappyBird/",
+      "src": "https://res.cloudinary.com/duy90jkv5/image/upload/w_10/v1539803637/flappy.png",
+      "dataSrc": "https://res.cloudinary.com/duy90jkv5/image/upload/v1539803637/flappy.png"
     }
   ]
 }
