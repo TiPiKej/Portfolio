@@ -138,7 +138,7 @@ let dom = {
   },
 
   pages: () => {
-    const c_pages = document.getElementById("pages_content");
+    // const c_pages = document.getElementById("pages_content");
     const c_apps = document.getElementById("aplications_content");
 
     fetch("js/json/pages.json")
@@ -172,8 +172,7 @@ let dom = {
             strona.appendChild(thumb_w);
             strona.appendChild(title);
 
-            if (what === "pages") c_pages.appendChild(strona);
-            else if (what === "apps") c_apps.appendChild(strona);
+            if (what === "apps") c_apps.appendChild(strona);
           });
         });
       })
