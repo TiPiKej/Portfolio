@@ -6,7 +6,7 @@
     .wait(() => {
       funkcje.meta_adds();
     })
-    .script(pre + "/js/dom_elements.min.js")
+    .script(pre + "/js/dom_elements.js")
     .wait(() => {
       dom.nav();
       dom.pages();
