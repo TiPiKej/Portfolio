@@ -5,7 +5,9 @@
   "homepage": "https://tipikej.github.io/Portfolio",
   "main": "index.js",
   "scripts": {
+    "startServer": "cd ./dist/ && live-server",
     "deploy": "gh-pages -d dist",
+    "start": "code ./dist/ && npm run startServer",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +20,7 @@
     "url": "https://github.com/TiPiKej/Portfolio/issues"
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.0.1",
+    "live-server": "^1.2.0"
   }
 }
