@@ -53,6 +53,12 @@
       "href": "https://tipikej.github.io/minesweeper/",
       "src": "https://res.cloudinary.com/duy90jkv5/image/upload/w_10/v1541774832/minesweeper.png",
       "dataSrc": "https://res.cloudinary.com/duy90jkv5/image/upload/v1541774832/minesweeper.png"
+    },
+    {
+      "title": "To do list",
+      "href": "https://tipikej.github.io/todolist/",
+      "src": "https://res.cloudinary.com/duy90jkv5/image/upload/w_10/v1543686468/list.png",
+      "dataSrc": "https://res.cloudinary.com/duy90jkv5/image/upload/v1543686468/list.png"
     }
   ]
 }
