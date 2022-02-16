@@ -1,26 +1,23 @@
 {
-  "name": "portfolio",
-  "version": "1.2.0",
-  "description": "",
-  "homepage": "https://tipikej.github.io/Portfolio",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "startServer": "cd ./dist/ && live-server",
-    "deploy": "gh-pages -d dist",
-    "start": "code ./dist/ && npm run startServer",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TiPiKej/Portfolio.git"
-  },
-  "author": "Tomasz Kumor",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/TiPiKej/Portfolio/issues"
+  "dependencies": {
+    "next": "latest",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "gh-pages": "^2.1.1",
-    "live-server": "^1.2.1"
+    "@types/node": "17.0.4",
+    "@types/react": "17.0.38",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.5",
+    "prettier": "^2.5.1",
+    "prettier-plugin-tailwindcss": "^0.1.1",
+    "tailwindcss": "^3.0.7",
+    "typescript": "4.5.4"
   }
 }
