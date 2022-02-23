@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import type { ReactElement } from 'react'
+import Layout from '../components/layout'
 
 interface NavigationStruct {
   content: string,
@@ -24,11 +26,6 @@ export default function Home() {
 
   return (
     <div className="
-      bg-black
-      md:bg-gradient-to-r
-      md:from-black md:via-black md:to-red-900
-      min-h-screen">
-      <div className="
         flex flex-col
         items-center md:items-start justify-center
         text-primary
@@ -41,7 +38,13 @@ export default function Home() {
           </Link>
         ))}
       </div>
-      {/* <div className="bg-origin-content p-10 bg-center bg-no-repeat bg-[url('https://picsum.photos/700/700')] brightness-50 rounded-full hidden lg:block"></div> */}
-    </div>
+  )
+}
+
+Home.getLayout = function getLayout(page: ReactElement) {
+  return (
+    <Layout>
+      {page}
+    </Layout>
   )
 }
