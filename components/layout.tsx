@@ -6,11 +6,10 @@ export default function Layout(props) {
   const { children, navigation } = props;
   
   return (
-    <div className="
+    <div className={`
     bg-black
-    md:bg-gradient-to-r
-    md:from-black md:via-black md:to-red-900
-    min-h-screen">
+    ${!navigation && "md:bg-gradient-to-r md:from-black md:via-black md:to-red-900"}
+    min-h-screen`}>
       {navigation && <Navbar />}
       <main>{children}</main>
       {/* <Footer /> */}
