@@ -13,17 +13,31 @@ export default function Home() {
       href: "/o-mnie"
     },
     {
-      content: "Znane technologie",
-      href: "/znane-technologie"
+      content: "Praca",
+      href: "/praca"
+    },
+    {
+      content: "Kontakt",
+      href: "/kontakt"
     },
   ]
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 bg-zinc-900 lg:bg-gradient-to-r lg:from-zinc-900 lg:via-zinc-900 lg:to-red-900 min-h-screen">
-      <div className="flex flex-col flex-nowrap text-sky-300 text-3xl sm:text-6xl 2xl:text-7xl space-y-8 items-center justify-center">
-        {navigationData.map(n => (
-          <Link href={n.href}>
-            <a>{n.content}</a>
+    <div className="
+      bg-black
+      md:bg-gradient-to-r
+      md:from-black md:via-black md:to-red-900
+      min-h-screen">
+      <div className="
+        flex flex-col
+        items-center md:items-start justify-center
+        text-primary
+        text-6xl sm:text-8xl md:text-9xl
+        font-bold
+        space-y-8 min-h-screen md:px-16">
+        {navigationData.map((n, i) => (
+          <Link href={n.href} key={n.href}>
+            <a className={`hover:tracking-wider transition-all ${!i && "text-secondary"}`}>{n.content}</a>
           </Link>
         ))}
       </div>
