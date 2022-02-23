@@ -8,7 +8,7 @@ export default function Layout(props) {
   return (
     <div className={`
     bg-black
-    ${!navigation && "md:bg-gradient-to-r md:from-black md:via-black md:to-red-900"}
+    ${!navigation && "lg:bg-gradient-to-r lg:from-black lg:via-black lg:to-red-900"}
     min-h-screen`}>
       {navigation && <Navbar />}
       <main>{children}</main>

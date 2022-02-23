@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors')
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   content: [
@@ -6,13 +7,15 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
-    colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
-      primary: "#ea0f1e",
-      secondary: colors.white,
-      ...colors,
+    extend: {
+      colors: {
+        primary: "#ea0f1e",
+        secondary: colors.white,
+      },
+    },
+    screens: {
+      xs: '450px',
+      ...defaultTheme.screens,
     },
   },
   plugins: [],
