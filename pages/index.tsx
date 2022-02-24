@@ -28,16 +28,16 @@ export default function Home() {
     <div className="
       flex flex-col
       items-center lg:items-start justify-center
-      text-primary
       text-5xl xs:text-7xl md:text-9xl
       font-bold
-      min-h-screen lg:px-16">
+      min-h-screen
+      select-none">
       {navigationData.map((n, i) => (
         <Link href={n.href} key={n.href}>
           <a className={`
             hover:tracking-wider transition-all min-w-full lg:min-w-min text-center
             py-5
-            ${!i && "text-secondary"}
+            ${i && "text-secondary"}
             `}>
               {n.content}
           </a>
@@ -49,7 +49,7 @@ export default function Home() {
 
 Home.getLayout = function getLayout(page: ReactElement) {
   return (
-    <Layout>
+    <Layout noNavigation>
       {page}
     </Layout>
   )

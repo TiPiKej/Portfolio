@@ -9,7 +9,7 @@ export default function Contact() {
 
 Contact.getLayout = function getLayout(page: ReactElement) {
   return (
-    <Layout navigation>
+    <Layout>
       {page}
     </Layout>
   )

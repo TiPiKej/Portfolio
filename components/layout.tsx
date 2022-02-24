@@ -1,18 +1,20 @@
 import Navbar from './navbar'
-// import Footer from './footer'
 import type { AppProps } from 'next/app'
 
 export default function Layout(props) {
-  const { children, navigation } = props;
+  const { children, noNavigation } = props;
   
   return (
     <div className={`
     bg-black
-    ${!navigation && "lg:bg-gradient-to-r lg:from-black lg:via-black lg:to-red-900"}
-    min-h-screen`}>
-      {navigation && <Navbar />}
-      <main>{children}</main>
-      {/* <Footer /> */}
+    ${noNavigation && "lg:bg-gradient-to-r lg:from-black lg:via-black lg:to-red-900"}
+    min-h-screen
+    flex justify-center
+    text-primary`}>
+      <div className="w-3/4">
+        {!noNavigation && <Navbar />}
+        <main>{children}</main>
+      </div>
     </div>
   )
 }
