@@ -9,7 +9,7 @@ export default function About() {
 
 About.getLayout = function getLayout(page: ReactElement) {
   return (
-    <Layout>
+    <Layout title="Zajmuję się designem oraz budową aplikacji">
       {page}
     </Layout>
   )

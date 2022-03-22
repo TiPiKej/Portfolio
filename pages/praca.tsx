@@ -9,7 +9,7 @@ export default function Work() {
 
 Work.getLayout = function getLayout(page: ReactElement) {
   return (
-    <Layout>
+    <Layout title="Gdzie pracuje oraz pracowałem">
       {page}
     </Layout>
   )

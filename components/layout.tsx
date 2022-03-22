@@ -1,8 +1,14 @@
 import Navbar from './navbar'
-import type { AppProps } from 'next/app'
+import PageTitle from './pageTitle';
 
-export default function Layout(props) {
-  const { children, noNavigation } = props;
+interface layoutProps {
+  children: JSX.Element,
+  noNavigation?: boolean,
+  title?: string,
+}
+
+export default function Layout(props: layoutProps) {
+  const { children, noNavigation, title } = props;
   
   return (
     <div className={`
@@ -11,8 +17,13 @@ export default function Layout(props) {
     min-h-screen
     flex justify-center
     text-primary`}>
-      <div className="w-3/4">
-        {!noNavigation && <Navbar />}
+      <div className="w-full lg:w-3/4 mx-10 lg:mg-0">
+        {!noNavigation && (
+          <>
+            <Navbar />
+            {title && <PageTitle title={title} /> }
+          </>
+        )}
         <main>{children}</main>
       </div>
     </div>
