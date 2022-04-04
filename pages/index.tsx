@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import type { ReactElement } from 'react'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 interface NavigationStruct {
   content: string,

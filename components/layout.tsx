@@ -1,5 +1,6 @@
-import Navbar from './navbar'
-import PageTitle from './pageTitle';
+import Navbar from './Navbar';
+import PageTitle from './PageTitle';
+import ScrollArrow from './ScrollArrow';
 
 interface layoutProps {
   children: JSX.Element,
@@ -9,7 +10,7 @@ interface layoutProps {
 
 export default function Layout(props: layoutProps) {
   const { children, noNavigation, title } = props;
-  
+
   return (
     <div className={`
     bg-black
@@ -21,7 +22,8 @@ export default function Layout(props: layoutProps) {
         {!noNavigation && (
           <>
             <Navbar />
-            {title && <PageTitle title={title} /> }
+            {title && <PageTitle title={title} />}
+            <ScrollArrow />
           </>
         )}
         <main>{children}</main>
