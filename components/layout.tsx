@@ -22,8 +22,14 @@ export default function Layout(props: layoutProps) {
         {!noNavigation && (
           <>
             <Navbar />
-            {title && <PageTitle title={title} />}
-            <ScrollArrow />
+            {title ? (
+              <>
+                <PageTitle title={title} />
+                <ScrollArrow />
+              </>
+            ) : (
+              <div className="spacer h-16"></div>
+            )}
           </>
         )}
         <main>{children}</main>
