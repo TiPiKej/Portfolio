@@ -5,11 +5,13 @@
   "homepage": "https://tipikej.github.io/Portfolio",
   "main": "index.js",
   "scripts": {
-    "start": "cd ./public/ && live-server",
+    "watch": "npm-watch",
+    "start": "npm:start-server",
     "deploy": "gh-pages -d public",
-    "watch-css": "sass -w public/scss:public/css",
-    "watch-js": "",
-    "dev": "",
+    "start-server": "cd ./public/ && live-server",
+    "compile-css": "sass -w src/scss:public/css",
+    "compile-js": "minify src/js/lab.js > public/js/lab.min.js && minify src/js/index.js > public/js/index.min.js && minify src/js/dom_elements.js > public/js/dom_elements.min.js && minify src/js/core.js > public/js/core.min.js",
+    "dev": "concurrently \"npm:start-server\" \"npm:watch\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,5 +28,24 @@
     "gh-pages": "^2.1.1",
     "live-server": "^1.2.1",
     "sass": "^1.52.3"
+  },
+  "dependencies": {
+    "npm-watch": "^0.11.0"
+  },
+  "watch": {
+    "compile-css": {
+      "patterns": [
+        "src/scss"
+      ],
+      "extensions": "scss",
+      "quiet": false
+    },
+    "compile-js": {
+      "patterns": [
+        "src/js"
+      ],
+      "extensions": "js",
+      "quiet": false
+    }
   }
 }

@@ -141,7 +141,7 @@ let dom = {
     // const c_pages = document.getElementById("pages_content");
     const c_apps = document.getElementById("aplications_content");
 
-    fetch("js/json/pages.json")
+    fetch("json/pages.json")
       .then(resp => resp.json())
       .then(json => {
         Object.keys(json).map(what => {
@@ -215,7 +215,7 @@ let dom = {
 
     let to_jezyk = null;
 
-    fetch("js/json/jezyki.json")
+    fetch("json/jezyki.json")
       .then(resp => resp.json())
       .then(resp => {
         Object.keys(resp).forEach((name, z) => {

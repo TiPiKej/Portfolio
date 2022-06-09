@@ -13,7 +13,7 @@
       dom.jezyki();
       funkcje.loader();
     })
-    .script(pre + "/cw/host.js")
+    .script(pre + "/cw/host.min.js")
     .wait(() => {
       if (document.querySelector(".backButton"))
         document.querySelector(".backButton").remove();

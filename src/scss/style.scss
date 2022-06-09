@@ -243,10 +243,12 @@ main{
 			justify-content: space-between;
 
 			.opis{
-				// margin-right: 30px;
-				// display: flex;
-				// flex-wrap: wrap;
-				// align-content: center;
+				margin-right: 30px;
+				display: flex;
+				flex-wrap: wrap;
+				align-content: center;
+				flex-direction: column;
+				justify-content: center;
 			}
 			
 			.fota{
