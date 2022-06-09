@@ -5,8 +5,11 @@
   "homepage": "https://tipikej.github.io/Portfolio",
   "main": "index.js",
   "scripts": {
-    "start": "cd ./dist/ && live-server",
-    "deploy": "gh-pages -d dist",
+    "start": "cd ./public/ && live-server",
+    "deploy": "gh-pages -d public",
+    "watch-css": "sass -w public/scss:public/css",
+    "watch-js": "",
+    "dev": "",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,7 +22,9 @@
     "url": "https://github.com/TiPiKej/Portfolio/issues"
   },
   "devDependencies": {
+    "concurrently": "^7.2.1",
     "gh-pages": "^2.1.1",
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.1",
+    "sass": "^1.52.3"
   }
 }
