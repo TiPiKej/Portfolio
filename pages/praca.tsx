@@ -13,7 +13,7 @@ const jobs: Job[] = [
 
 export default function Work() {
   return (
-    <div className="" style={{ minHeight: `calc(100vh - 20rem)` }}>
+    <div className="border-t-2" style={{ minHeight: `calc(100vh - 20rem)` }}>
       {jobs.map(job => (
         <JobBlock job={job} />
       ))}
