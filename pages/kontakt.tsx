@@ -1,17 +1,9 @@
 import { ReactElement } from "react"
-import { IconType } from "react-icons";
 import Layout from "../components/Layout"
 import { FaFacebook, FaGithub, FaTwitter } from "react-icons/fa";
 import { AiFillMail } from "react-icons/ai";
 import SocialBlock from "../components/SocialBlock";
-
-export interface Social {
-  name?: string;
-  href: string;
-  icon: IconType;
-  color?: string;
-  bgColor?: string;
-}
+import { Social } from "../models/Social";
 
 const sociale: Social[] = [
   {

@@ -1,4 +1,4 @@
-import { Social } from "../pages/kontakt"
+import { Social } from "../models/Social";
 
 interface SocialBlockProps {
   social: Social
